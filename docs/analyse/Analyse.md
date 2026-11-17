@@ -10,3 +10,7 @@
 6. A quelle fréquence a - ton les feux de forêt dans la région ? si chaque été, alors
 7. Quelle superficie/ étendue de forêt est-elle perdue chaque apparition des deux de forêt
 8. Combien de temps mettent les équipes en place pour détecter les départs des feux de forêt dans la région?
+9. Quels sont les zones de Haute-Garonne où les départs de feu sont plus fréquents?
+10. A partir de quel niveau de danger de la méteo des forets on peut observer une hausse nette de departes de feu en occitanie?
+11. Comment on peut renforcer la surveillance a partir du niveau de danger?
+12. Comment la frequence mensuelles des departs de feu evolue-t-elle au cours de l'année?
