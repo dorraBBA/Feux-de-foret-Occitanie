@@ -2,13 +2,13 @@
 # Feux de foret Occitanie
 
 ## Les questions:
-1) Comment sont calculés les seuils actuels de déclenhecment des dispositifs renforcés
-si la réponse est 
+1) Comment sont calculés les seuils actuels de déclenhecment des dispositifs renforcés ?
+
 
 2) A quelle fréquence a - ton les feux de forêt dans la région ?
-si chaque été, alors 
 
-3) Quelle superficie/ étendue de forêt est-elle perdue chaque apparition des deux de forêt 
+
+3) Quelle superficie/ étendue de forêt est-elle perdue chaque apparition des feux de forêt ?
 
 4) combien de temps mettent les équipes en place pour détecter les départs des feux de forêt dans la région?
 
