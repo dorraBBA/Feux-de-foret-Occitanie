@@ -3,23 +3,18 @@
 
 ## 1.Les questions:
 1) Comment sont calculés les seuils actuels de déclenhecment des dispositifs renforcés ?
-
-
 2) A quelle fréquence a - ton les feux de forêt dans la région ?
-
-
 3) Quelle superficie/ étendue de forêt est-elle perdue chaque apparition des feux de forêt ?
-
 4) combien de temps mettent les équipes en place pour détecter les départs des feux de forêt dans la région?
 
 
-## 2.Les termes inconnus:
+## 2. Les termes inconnus:
 Météo de forêt : un service d'information lancé par Météo-France pour sensibiliser le public et prévenir le risque d'incendies de forêt et de végétation
 grain : le niveau de détail des données
 emprise : l'étendue de la donnée, sa couverture
 guet : surveillance
 
-## 3.Les besoins:
+## 3. Les besoins:
 La décision à éclairer, en une phrase : où concentrer les moyens humains et financiers du SDIS 31 pour la saison feux 2027, et à partir de quel niveau de la Météo des forêts déclencher le dispositif renforcé.
 
 Ce qui manque dans la commande pour y répondre :
@@ -34,7 +29,7 @@ Ce qui manque dans la commande pour y répondre :
 - Les données internes du SDIS 31 (heures d'alerte et d'arrivée des équipes, mode de détection) : sont-elles accessibles, et sous quelle forme ?
 - Le niveau de détail attendu de la réponse : par commune, par massif ou par département.
 
-## 4.Les données:
+## 4. Les données:
 
 | Question | Donnée idéale | Grain (une ligne = ?) | Période | Fraîcheur | Emprise géographique |
 |---|---|---|---|---|---|
