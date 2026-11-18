@@ -84,3 +84,13 @@
 - **Ce que la décision coûte :** Période courte (2024-2026) ; différences climatiques entre départements.
 - **Termes du glossaire touchés :** aucun
 
+## Décision 007 — [Proposition d'architecture]
+
+- **Date :** 18-11-2026
+- **Auteurs :** Ange
+- **Question :** Aucune
+- **Manque :** 
+- **Décision :** A valider 
+- **Raison :** 
+- **Ce que la décision coûte :** Premier jet d'une architecture
+- **Termes du glossaire touchés :** aucun
