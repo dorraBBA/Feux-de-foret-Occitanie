@@ -1,6 +1,6 @@
 # Nouvelles sources à intégrer :
 
-## Sources complémentaires — Prévenir et détecter les feux de forêt
+## Partie I : Sources complémentaires — Prévenir et détecter les feux de forêt
 
 Dernière mise à jour : 2026-11-18
 
@@ -123,9 +123,9 @@ Elles sont particulièrement utiles pour :
 - Comprendre les moyens de surveillance et d'intervention.
 - Identifier les limites des données disponibles et les besoins d'informations complémentaires.
 
-### 8. Fiches descriptives des sources complémentaires
+## Partie II :  Fiches descriptives des sources complémentaires
 
-#### S40 — LiDAR HD – IGN
+### S40 — LiDAR HD – IGN
 
 | Rubrique | Valeur |
 |---|---|
@@ -149,7 +149,7 @@ Elles sont particulièrement utiles pour :
 
 ---
 
-#### S41 — Zonage informatif des Obligations légales de débroussaillement (OLD) en Haute-Garonne
+### S41 — Zonage informatif des Obligations légales de débroussaillement (OLD) en Haute-Garonne
 
 | Rubrique | Valeur |
 |---|---|
@@ -171,7 +171,7 @@ Elles sont particulièrement utiles pour :
 
 ---
 
-#### S42 — Rapport d'activité 2025 du SDIS 31
+### S42 — Rapport d'activité 2025 du SDIS 31
 
 | Rubrique | Valeur |
 |---|---|
@@ -201,7 +201,7 @@ Elles sont particulièrement utiles pour :
 
 ---
 
-#### S43 — Statistiques nationales des services d'incendie et de secours
+### S43 — Statistiques nationales des services d'incendie et de secours
 
 | Rubrique | Valeur |
 |---|---|
@@ -228,7 +228,7 @@ Elles sont particulièrement utiles pour :
 
 ---
 
-#### S44 — Dossier de presse Météo des forêts – Météo-France
+### S44 — Dossier de presse Météo des forêts – Météo-France
 
 | Rubrique | Valeur |
 |---|---|
@@ -259,7 +259,7 @@ L'indice de danger intégré prend également en compte l'état de sécheresse d
 
 ---
 
-#### S45 — Bilan national de prévention des feux – Ministère de la Transition écologique (2026)
+### S45 — Bilan national de prévention des feux – Ministère de la Transition écologique (2026)
 
 | Rubrique | Valeur |
 |---|---|
@@ -287,7 +287,7 @@ L'indice de danger intégré prend également en compte l'état de sécheresse d
 
 ---
 
-#### S46 — Panorama des risques naturels en Occitanie – DREAL Occitanie
+### S46 — Panorama des risques naturels en Occitanie – DREAL Occitanie
 
 | Rubrique | Valeur |
 |---|---|
@@ -314,7 +314,7 @@ L'indice de danger intégré prend également en compte l'état de sécheresse d
 
 ---
 
-#### S47 — Prévention du risque incendie et obligation de débroussaillement – DREAL Occitanie
+### S47 — Prévention du risque incendie et obligation de débroussaillement – DREAL Occitanie
 
 | Rubrique | Valeur |
 |---|---|
@@ -344,7 +344,7 @@ La documentation présente notamment :
 
 ---
 
-#### S48 — Prévention des incendies de forêt en Haute-Garonne (PDPFCI 2019-2029)
+### S48 — Prévention des incendies de forêt en Haute-Garonne (PDPFCI 2019-2029)
 
 | Rubrique | Valeur |
 |---|---|
@@ -378,7 +378,7 @@ Le PDPFCI permet de comprendre :
 
 ---
 
-#### S49 — Obligations légales de débroussaillement (OLD) en Haute-Garonne
+### S49 — Obligations légales de débroussaillement (OLD) en Haute-Garonne
 
 | Rubrique | Valeur |
 |---|---|
@@ -405,7 +405,7 @@ Le PDPFCI permet de comprendre :
 
 ---
 
-#### 10. Synthèse des sources complémentaires
+### 9. Synthèse des sources complémentaires
 
 | ID | Source | Type de données | Questions principalement concernées |
 |---|---|---|---|
