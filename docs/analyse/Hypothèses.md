@@ -62,7 +62,7 @@ La Haute-Garonne pourrait présenter une évolution du niveau de danger différe
 ---
 
 
-### Question 1. Comment sont calculés les seuils actuels de déclenchement des dispositifs renforcés ?
+### Question 4. Comment sont calculés les seuils actuels de déclenchement des dispositifs renforcés ?
 
 **Hypothèse :**
 
@@ -80,7 +80,7 @@ Les seuils de déclenchement des dispositifs renforcés pourraient être défini
 - Comparer ces critères avec les niveaux de danger de la Météo des forêts.
 - Vérifier si les seuils sont identiques ou adaptés selon les territoires.
 
-### Question 2. Quelle superficie ou étendue de forêt est-elle perdue à chaque apparition des feux de forêt ?
+### Question 5. Quelle superficie ou étendue de forêt est-elle perdue à chaque apparition des feux de forêt ?
 
 **Hypothèse :**
 
@@ -99,7 +99,7 @@ La superficie brûlée varie fortement selon les incendies. La majorité des dé
 - Identifier les incendies les plus importants.
 - Calculer la part de la superficie totale brûlée représentée par les grands incendies.
 
-### Question 3. Combien de temps mettent les équipes en place pour détecter les départs des feux de forêt dans la région ?
+### Question 6. Combien de temps mettent les équipes en place pour détecter les départs des feux de forêt dans la région ?
 
 **Hypothèse :**
 
@@ -123,7 +123,7 @@ Le temps de détection pourrait varier selon la localisation du départ de feu, 
 ---
 
 
-### Question 1. À partir de quel niveau de danger de la Météo des forêts peut-on observer une hausse nette des départs de feu en Occitanie ?
+### Question 7. À partir de quel niveau de danger de la Météo des forêts peut-on observer une hausse nette des départs de feu en Occitanie ?
 
 **Hypothèse :**
 
@@ -142,7 +142,7 @@ Une augmentation significative du nombre de départs de feu pourrait être obser
 - Comparer les fréquences entre les différents niveaux.
 - Identifier le niveau à partir duquel la hausse devient statistiquement significative.
 
-### Question 2. Comment peut-on renforcer la surveillance à partir du niveau de danger ?
+### Question 8. Comment peut-on renforcer la surveillance à partir du niveau de danger ?
 
 **Hypothèse :**
 
@@ -163,7 +163,7 @@ L'intensité de la surveillance pourrait être progressivement renforcée en fon
 - Identifier les secteurs insuffisamment couverts.
 - Proposer des niveaux de surveillance adaptés à chaque niveau de danger.
 
-### Question 3. Comment la fréquence mensuelle des départs de feu évolue-t-elle au cours de l'année ?
+### Question 9. Comment la fréquence mensuelle des départs de feu évolue-t-elle au cours de l'année ?
 
 **Hypothèse :**
 
