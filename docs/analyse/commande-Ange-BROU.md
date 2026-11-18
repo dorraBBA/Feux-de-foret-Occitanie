@@ -48,12 +48,21 @@ Ce qui manque dans la commande pour y répondre :
 
 ### Matrice
 
-| Question | [Source 1] | [Source 2] | [Source 3] | [Source 4] |
+Sources de l'inventaire : BDIFF, Interventions SDIS, Météo des forêts (API et archives), Statistiques nationales des SDIS, Pyronear, PDPFCI, BD Forêt V2, Admin Express, EFFIS, NASA FIRMS. Les fiches sont dans `docs/sources/`. Les sources non retenues du défi (BD TOPO, Corine Land Cover, AROME, etc.) n'ont pas de rapport direct avec mes quatre questions.
+
+| Question | BDIFF | Interventions SDIS | Météo des forêts | Stats SDIS |
 |---|---|---|---|---|
-| 1 | degré : raison (colonne ou rubrique) | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1. Seuils de déclenchement | absent : rubrique « Grain », aucun indice ni seuil | absent : colonnes de compteurs d'interventions par type, aucun seuil | partiel : colonnes `niveau_j1` et `niveau_j2` par département et par jour, mais ni méthode de calcul ni seuil du SDIS 31 (PDF de présentation non lu) | inconnu : documents PDF non lus, rubrique « Clés » : aucune clé commune |
+| 2. Fréquence des feux | inconnu : fiche annonce un incendie par ligne depuis 2006, mais colonnes date et commune non vérifiées, et la fiche data.gouv.fr dit « agrégées à la commune » | partiel : colonne `Feux de végétations` par département et par an (Haute-Garonne : 403 en 2024), mais pas de date et mélange avec feux d'herbe | absent : niveaux de danger, aucun feu | partiel : rubrique « Grain » : un document par statistique, niveau de détail variable |
+| 3. Surface perdue | inconnu : fiche annonce la surface de chaque incendie, colonne non vérifiée | absent : aucune colonne de surface | absent | absent : rubrique « Grain », documents sans surface par feu (non vérifié en détail) |
+| 4. Délai de détection | inconnu : colonnes d'horaires non vérifiées (fiche : localisation, surface, nature) | absent : 71 colonnes de compteurs, aucune date ni heure | absent | inconnu : retours d'expérience (RETEX) possibles, non lus |
+
+| Question | Pyronear | PDPFCI | BD Forêt V2 | Admin Express | EFFIS | NASA FIRMS |
+|---|---|---|---|---|---|---|
+| 1. Seuils de déclenchement | absent : images de fumée | inconnu : plan en PDF de 102 pages pour la Haute-Garonne, mesures de prévention possibles, non lu | absent : polygones de formations végétales | absent : limites administratives | absent : indices européens (FWI), pas le seuil du SDIS 31 | absent |
+| 2. Fréquence des feux | absent : images d'entraînement pour la détection, pas de statistique de feux | absent : mesures de prévention | absent : rubrique « Grain » (zone forestière) | absent : sert aux jointures | inconnu : totaux par pays, détail France non vérifié | inconnu : détections satellite, accès non vérifié |
+| 3. Surface perdue | absent | absent | partiel : surface forestière par zone, pour rapporter les surfaces brûlées, pas la surface perdue | absent | inconnu : base de surfaces brûlées, couverture France non vérifiée | inconnu : points de feux actifs, pas de surface |
+| 4. Délai de détection | partiel : colonnes `date`, `camera`, `partner` : date de l'image seulement, pas l'heure d'alerte ; partenaires dont SDIS 12 (Aveyron), pas le SDIS 31 | absent | absent | absent | absent | inconnu : heure de détection satellite possible, non vérifiée |
 
 ### Écarts avec la section 4
 
@@ -61,13 +70,16 @@ Pour chaque question, comparez la donnée idéale (section 4) à la meilleure so
 
 | Question | Meilleure source | Grain | Période | Fraîcheur | Emprise |
 | -------- | ---------------- | ----- | ------- | --------- | ------- |
-| 1        |                  |       |         |           |         |
-| 2        |                  |       |         |           |         |
-| 3        |                  |       |         |           |         |
-| 4        |                  |       |         |           |         |
+| 1        | Archives de la Météo des forêts | jour × département = | 10 ans → 2024 à 2026 (2 à 3 saisons) | quotidienne = | département (96 en métropole) = |
+| 2        | BDIFF (à vérifier) ; sinon Interventions SDIS | un départ de feu → un département × un an pour Interventions SDIS (BDIFF : un incendie, non vérifié) | 10 ans → 2008 à 2024 pour Interventions SDIS ; BDIFF : 2006 à 2022 ou 2025 selon les fiches | annuelle = | commune → département pour Interventions SDIS ; BDIFF : commune ou localisation exacte, non vérifié |
+| 3        | BDIFF (à vérifier) | un feu = (non vérifié) | 10 ans → 2006 à 2022 ou 2025 (non vérifié) | annuelle = | Occitanie = (non vérifié) |
+| 4        | Pyronear (indirect) | une intervention → une image | 5 ans → 2023 à 2025 | annuelle ou quasi temps réel → non renseignée | SDIS 31 → SDIS 07, 12, 77 et Force 06 : pas de SDIS 31 |
 
 ### Décisions
 
 | Question | Ce qui manque | Décision | Pourquoi | Ce que la décision coûte |
 |---|---|---|---|---|
-| | | collecter / approximer / renoncer | | |
+| 1. Seuils de déclenchement | Le seuil actuel du SDIS 31 et la méthode de calcul de l'indice ; aucune source ne les donne | collecter | Seul le SDIS 31 connaît son seuil. Lire en plus le PDF de présentation de la Météo des forêts (jeu « Archives ») et le PDPFCI de la Haute-Garonne | Dépend d'une réponse du SDIS 31 ; sans réponse, tester plusieurs seuils (niveaux 2, 3 et 4) sans connaître le seuil actuel |
+| 2. Fréquence des feux | Vérifier d'abord les colonnes de la BDIFF (date de chaque feu, commune) ; sinon seulement un compteur annuel par département | approximer | Les `Feux de végétations` par département et par an (Interventions SDIS) donnent un ordre de grandeur en attendant la BDIFF | Mélange feux de forêt et feux d'herbe ; impossible de croiser avec l'indice journalier |
+| 3. Surface perdue | Surface par feu : colonne de la BDIFF non vérifiée | collecter | Télécharger l'export BDIFF d'Occitanie et vérifier la colonne de surface. Si absente, EFFIS (gros feux seulement) en proxy | Temps de téléchargement et de nettoyage ; petits feux absents si repli sur EFFIS |
+| 4. Délai de détection | Heures d'alerte et d'arrivée des équipes : aucune source ouverte ne les contient | renoncer | Donnée interne aux SDIS, non publiée. Reformuler : « où et quand les feux démarrent-ils ? » (BDIFF), sauf si le SDIS 31 transmet ses horodatages | Plus de mesure du délai ; on ne peut pas juger l'efficacité de la détection |
