@@ -1,5 +1,5 @@
 
-# Hypothèses de recherche — Prévenir et détecter les feux de forêt
+# Hypothèses
 
 
 ### Question 1. Quelles sont les zones de Haute-Garonne les plus exposées aux départs de feux ?
