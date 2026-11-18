@@ -1,6 +1,6 @@
 # Nouvelles sources à intégrer :
 
-## Partie I : Sources complémentaires — Prévenir et détecter les feux de forêt
+## Partie I : Sources complémentaires
 
 Dernière mise à jour : 2026-11-18
 
