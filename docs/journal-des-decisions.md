@@ -1,4 +1,4 @@
-# Journal des décisions — Feux de forêt Occitanie
+# Journal des décisions
 
 
 ## Décision 001 — [Questions analytiques à retenir]
