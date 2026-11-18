@@ -10,11 +10,7 @@ Dernière mise à jour : 2026-11-17
 
 **Sources et colonnes :** Variables selon la source
 
-<<<<<<< HEAD
-**Divergences :** Le grain peut différer entre les sources. La ligne peut réprésenter un incendie dans une source et une commune dans l'autre
-=======
 **Divergences :** Le grain peut différer entre les sources
->>>>>>> f05bb1f2eafe9ad0e751f7e3e0973c18d831bea0
 
 **Règle retenue :** Identifier systématiquement ce que représente une ligne
 
@@ -27,10 +23,6 @@ Dernière mise à jour : 2026-11-17
 **Origine de la définition :** https://www.getdbt.com/blog/guide-to-data-grain
 
 **Ajouté par :** Ange-Samuel Brou, 2026-11-17
-
-
-<<<<<<< HEAD
-
 
 
 ## Météo des forêts
@@ -52,8 +44,6 @@ Dernière mise à jour : 2026-11-17
 **Origine de la définition :** Météo-France — Météo des forêts
 
 **Ajouté par :** Ange-Samuel Brou, 2026-11-17
-
-
 
 
 ## Emprise
@@ -96,7 +86,8 @@ Dernière mise à jour : 2026-11-17
 **Origine de la définition :** Ministère de l'Intérieur — stratégie nationale de lutte contre les feux de forêt.
 
 **Ajouté par :** Ange-Samuel Brou, 2026-11-17
-=======
+
+
 ## Météo des forêts
 
 **Définition :** Indicateur du niveau de danger de départ de feu
@@ -221,5 +212,3 @@ Dernière mise à jour : 2026-11-17
 **Origine de la définition :** Analyse du besoin métier
 
 **Ajouté par :** Dorra Boucharbia, 2026-11-17
-
->>>>>>> f05bb1f2eafe9ad0e751f7e3e0973c18d831bea0
