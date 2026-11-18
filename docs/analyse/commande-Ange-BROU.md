@@ -50,14 +50,14 @@ Ce qui manque dans la commande pour y répondre :
 
 Sources de l'inventaire : BDIFF, Interventions SDIS, Météo des forêts (API et archives), Statistiques nationales des SDIS, Pyronear, PDPFCI, BD Forêt V2, Admin Express, EFFIS, NASA FIRMS. Les fiches sont dans `docs/sources/`. Les sources non retenues du défi (BD TOPO, Corine Land Cover, AROME, etc.) n'ont pas de rapport direct avec mes quatre questions.
 
-| Question | BDIFF | Interventions SDIS | Météo des forêts | Stats SDIS |
+| Question/sources | BDIFF | Interventions SDIS | Météo des forêts | Stats SDIS |
 |---|---|---|---|---|
 | 1. Seuils de déclenchement | absent : rubrique « Grain », aucun indice ni seuil | absent : colonnes de compteurs d'interventions par type, aucun seuil | partiel : colonnes `niveau_j1` et `niveau_j2` par département et par jour, mais ni méthode de calcul ni seuil du SDIS 31 (PDF de présentation non lu) | inconnu : documents PDF non lus, rubrique « Clés » : aucune clé commune |
 | 2. Fréquence des feux | inconnu : fiche annonce un incendie par ligne depuis 2006, mais colonnes date et commune non vérifiées, et la fiche data.gouv.fr dit « agrégées à la commune » | partiel : colonne `Feux de végétations` par département et par an (Haute-Garonne : 403 en 2024), mais pas de date et mélange avec feux d'herbe | absent : niveaux de danger, aucun feu | partiel : rubrique « Grain » : un document par statistique, niveau de détail variable |
 | 3. Surface perdue | inconnu : fiche annonce la surface de chaque incendie, colonne non vérifiée | absent : aucune colonne de surface | absent | absent : rubrique « Grain », documents sans surface par feu (non vérifié en détail) |
 | 4. Délai de détection | inconnu : colonnes d'horaires non vérifiées (fiche : localisation, surface, nature) | absent : 71 colonnes de compteurs, aucune date ni heure | absent | inconnu : retours d'expérience (RETEX) possibles, non lus |
 
-| Question | Pyronear | PDPFCI | BD Forêt V2 | Admin Express | EFFIS | NASA FIRMS |
+| Questions/sources | Pyronear | PDPFCI | BD Forêt V2 | Admin Express | EFFIS | NASA FIRMS |
 |---|---|---|---|---|---|---|
 | 1. Seuils de déclenchement | absent : images de fumée | inconnu : plan en PDF de 102 pages pour la Haute-Garonne, mesures de prévention possibles, non lu | absent : polygones de formations végétales | absent : limites administratives | absent : indices européens (FWI), pas le seuil du SDIS 31 | absent |
 | 2. Fréquence des feux | absent : images d'entraînement pour la détection, pas de statistique de feux | absent : mesures de prévention | absent : rubrique « Grain » (zone forestière) | absent : sert aux jointures | inconnu : totaux par pays, détail France non vérifié | inconnu : détections satellite, accès non vérifié |
