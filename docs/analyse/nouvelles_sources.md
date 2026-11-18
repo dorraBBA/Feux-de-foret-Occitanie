@@ -1,8 +1,7 @@
 # Nouvelles sources à intégrer :
+Dernière mise à jour : 2026-11-18
 
 ## Partie I : Sources complémentaires
-
-Dernière mise à jour : 2026-11-18
 
 ### 1. Inventaire des nouvelles sources
 
