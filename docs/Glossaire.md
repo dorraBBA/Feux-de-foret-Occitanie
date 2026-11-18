@@ -155,7 +155,7 @@ Dernière mise à jour : 2026-11-17
 
 **Définition :** Moyens supplémentaires de patrouille et de surveillance contre les incendies
 
-**Sources et colonnes :** Données opérationnelles des services de secours, si disponibles
+**Sources et colonnes :** Données opérationnelles des services de secours
 
 **Divergences :** Les moyens et les coûts peuvent varier selon les territoires
 
