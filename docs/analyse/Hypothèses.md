@@ -59,9 +59,6 @@ La Haute-Garonne pourrait présenter une évolution du niveau de danger différe
 - Comparer les résultats avec les moyennes nationales.
 - Étudier les différences selon les saisons et les années.
 
----
-
-
 ### Question 4. Comment sont calculés les seuils actuels de déclenchement des dispositifs renforcés ?
 
 **Hypothèse :**
@@ -119,9 +116,6 @@ Le temps de détection pourrait varier selon la localisation du départ de feu, 
 - Identifier les territoires où les moyens de surveillance sont moins présents.
 
 **Limite :** Les données d'images Pyronear et les statistiques d'intervention ne donnent pas nécessairement l'heure réelle de départ du feu ni l'heure de sa première détection. Pour calculer précisément un délai, il faudra disposer d'horodatages fiables.
-
----
-
 
 ### Question 7. À partir de quel niveau de danger de la Météo des forêts peut-on observer une hausse nette des départs de feu en Occitanie ?
 

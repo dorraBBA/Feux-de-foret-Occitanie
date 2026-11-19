@@ -9,7 +9,7 @@ Groupe : Occitanie classe 2 · V0.0.1 18-11-2026
 Le commanditaire est le SDIS 31 (Haute-Garonne), pour la saison feux 2027.
 
 Décision à éclairer : 
-1)  où concentrer les moyens de surveillance et de prévention,
+1) où concentrer les moyens de surveillance et de prévention,
 2) à partir de quel niveau de la Météo des forêts déclencher le dispositif renforcé. 
 
 Echéance : être prêt pour la saison 2027 
