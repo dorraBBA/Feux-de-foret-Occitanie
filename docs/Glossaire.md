@@ -2,8 +2,6 @@
 
 Dernière mise à jour : 2026-11-17
 
-
-
 ## Grain
 
 **Définition :** Ce que représente une ligne dans un jeu de données
@@ -17,6 +15,10 @@ Dernière mise à jour : 2026-11-17
 **Unité ou granularité :** Événement, commune, jour, année, etc
 
 **Exemple :** Une ligne BDIFF = un incendie
+
+**Statut :** validé
+
+**Origine de la définition :** Glossaire Data
 
 **Statut :** proposé
 
@@ -212,3 +214,108 @@ Dernière mise à jour : 2026-11-17
 **Origine de la définition :** Analyse du besoin métier
 
 **Ajouté par :** Dorra Boucharbia, 2026-11-17
+
+
+## SDIS
+
+**Définition** : Service Départemental d'Incendie et de Secours, chargé des opérations de secours et de la lutte contre les incendies.
+
+**Sources et colonnes** : Données et statistiques des SDIS.
+
+**Divergences** : Les moyens et les méthodes d'intervention peuvent varier selon les départements.
+
+**Règle retenue** : Identifier le SDIS concerné et son département.
+
+**Unité ou granularité** : Département.
+
+**Exemple** : Le SDIS 31 intervient en Haute-Garonne.
+
+**Statut** : validé
+
+**Origine de la définition** : Services départementaux d'incendie et de secours.
+
+**Ajouté par** : Mouad Arahal, 2026-11-17
+
+
+## Météo des forêts
+
+**Définition** : Indicateur de Météo-France qui informe sur le niveau de danger de feu de forêt.
+
+**Sources et colonnes** : Météo-France, niveaux de danger par département et par jour.
+
+**Divergences** : Le niveau de danger varie selon les conditions météorologiques et les territoires.
+
+**Règle retenue** : Utiliser les niveaux officiels de Météo-France.
+
+**Unité ou granularité** : Département et jour.
+
+**Exemple** : Un département est classé en danger élevé.
+
+**Statut** : validé
+
+**Origine de la définition** : Météo-France.
+
+**Ajouté par** : Mouad Arahal, 2026-11-17
+
+
+## Seuil de déclenchement
+
+**Définition** : Niveau de danger à partir duquel des mesures supplémentaires de surveillance sont mises en place.
+
+**Sources et colonnes** : Données de danger de feu et règles opérationnelles du SDIS.
+
+**Divergences** : Le seuil peut varier selon les territoires et les moyens disponibles.
+
+**Règle retenue** : Déterminer un seuil adapté à partir des données analysées.
+
+**Unité ou granularité** : Niveau de danger.
+
+**Exemple** : Renforcer la surveillance lorsque le danger atteint un niveau défini.
+
+**Statut** : à définir
+
+**Origine de la définition** : Analyse du besoin du SDIS.
+
+**Ajouté par** : Mouad Arahal, 2026-11-17
+
+
+## Patrouilles
+
+**Définition** : Équipes qui se déplacent pour surveiller les zones à risque et détecter les départs de feu.
+
+**Sources et colonnes** : Informations opérationnelles du SDIS sur les moyens de surveillance.
+
+**Divergences** : La fréquence et les zones de patrouille peuvent varier selon le risque.
+
+**Règle retenue** : Adapter les patrouilles aux zones et aux périodes les plus exposées.
+
+**Unité ou granularité** : Patrouille, zone et période.
+
+**Exemple** : Une équipe surveille une zone forestière pendant une journée à risque.
+
+**Statut** : validé
+
+**Origine de la définition** : Organisation de la surveillance des incendies.
+
+**Ajouté par** : Mouad Arahal, 2026-11-17
+
+
+## Guet
+
+**Définition** : Surveillance depuis un point d'observation pour repérer rapidement les départs de feu.
+
+**Sources et colonnes** : Informations sur les dispositifs de surveillance des incendies.
+
+**Divergences** : Les dispositifs de guet peuvent être différents selon les départements.
+
+**Règle retenue** : Identifier les points d'observation et les périodes de surveillance.
+
+**Unité ou granularité**: Point d'observation et période.
+
+**Exemple** : Un agent surveille une forêt depuis un poste de guet.
+
+**Statut** : validé
+
+**Origine de la définition** : Dispositifs de prévention des incendies.
+
+**Ajouté par** : Mouad Arahal, 2026-11-17
