@@ -2,6 +2,7 @@
 
 Dernière mise à jour : 2026-11-17
 
+
 ## Grain
 
 **Définition :** Ce que représente une ligne dans un jeu de données

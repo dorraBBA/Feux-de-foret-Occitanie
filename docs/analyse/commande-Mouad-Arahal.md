@@ -93,4 +93,3 @@ Pour chaque question, je compare la donnée idéale (section 4) à la meilleure 
 | 2. Lien entre danger météo et départs réels | Historique commun des niveaux de danger météo et des départs de feu. | Collecter | Obtenir les archives météo pour les croiser avec les dates des incendies. | Temps de collecte et de croisement des données. |
 | 3. Choix du seuil de déclenchement | Seuil opérationnel actuel du SDIS 31 et moyens de surveillance engagés. | Collecter | Demander au SDIS 31 les règles de déclenchement et les moyens mobilisés. | Dépendance à la réponse du SDIS et temps d'analyse. |
 | 4. Fréquence mensuelle des départs de feu | Dates complètes des incendies sur plusieurs années. | Collecter | Vérifier l'historique BDIFF pour calculer les départs de feu par mois. | Nettoyage des dates et vérification de la période couverte. |
-
