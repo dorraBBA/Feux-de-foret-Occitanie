@@ -27,27 +27,6 @@ Dernière mise à jour : 2026-11-17
 **Ajouté par :** Ange-Samuel Brou, 2026-11-17
 
 
-## Météo des forêts
-
-**Définition :** Service de Météo-France informant le public du niveau de danger de feux de forêt et de végétation.
-
-**Sources et colonnes :** [Météo des forêts - Météo-France](https://previ.meteofrance.com/meteo-des-forets) — niveau de danger par département.
-
-**Divergences :** Aucune identifiée.
-
-**Règle retenue :** Utiliser les 4 niveaux : faible, modéré, élevé, très élevé.
-
-**Unité ou granularité :** Département / jour.
-
-**Exemple :** Danger élevé dans l'Hérault.
-
-**Statut :** proposé
-
-**Origine de la définition :** Météo-France — Météo des forêts
-
-**Ajouté par :** Ange-Samuel Brou, 2026-11-17
-
-
 ## Emprise
 
 **Définition :** Étendue géographique couverte par un jeu de données.
@@ -88,27 +67,6 @@ Dernière mise à jour : 2026-11-17
 **Origine de la définition :** Ministère de l'Intérieur — stratégie nationale de lutte contre les feux de forêt.
 
 **Ajouté par :** Ange-Samuel Brou, 2026-11-17
-
-
-## Météo des forêts
-
-**Définition :** Indicateur du niveau de danger de départ de feu
-
-**Sources et colonnes :** Données Météo-France
-
-**Divergences :** Les niveaux de danger et les critères de calcul peuvent varier
-
-**Règle retenue :** Identifier les niveaux et les critères de calcul
-
-**Unité ou granularité :** Niveau de danger par jour et par zone
-
-**Exemple :** Une zone est classée en danger élevé
-
-**Statut :** à vérifier
-
-**Origine de la définition :** Données Météo-France
-
-**Ajouté par :** Dorra Boucharbia, 2026-11-17
 
 
 ## Fausse alerte
@@ -258,27 +216,6 @@ Dernière mise à jour : 2026-11-17
 **Ajouté par** : Mouad Arahal, 2026-11-17
 
 
-## Seuil de déclenchement
-
-**Définition** : Niveau de danger à partir duquel des mesures supplémentaires de surveillance sont mises en place.
-
-**Sources et colonnes** : Données de danger de feu et règles opérationnelles du SDIS.
-
-**Divergences** : Le seuil peut varier selon les territoires et les moyens disponibles.
-
-**Règle retenue** : Déterminer un seuil adapté à partir des données analysées.
-
-**Unité ou granularité** : Niveau de danger.
-
-**Exemple** : Renforcer la surveillance lorsque le danger atteint un niveau défini.
-
-**Statut** : à définir
-
-**Origine de la définition** : Analyse du besoin du SDIS.
-
-**Ajouté par** : Mouad Arahal, 2026-11-17
-
-
 ## Patrouilles
 
 **Définition** : Équipes qui se déplacent pour surveiller les zones à risque et détecter les départs de feu.
@@ -296,26 +233,5 @@ Dernière mise à jour : 2026-11-17
 **Statut** : validé
 
 **Origine de la définition** : Organisation de la surveillance des incendies.
-
-**Ajouté par** : Mouad Arahal, 2026-11-17
-
-
-## Guet
-
-**Définition** : Surveillance depuis un point d'observation pour repérer rapidement les départs de feu.
-
-**Sources et colonnes** : Informations sur les dispositifs de surveillance des incendies.
-
-**Divergences** : Les dispositifs de guet peuvent être différents selon les départements.
-
-**Règle retenue** : Identifier les points d'observation et les périodes de surveillance.
-
-**Unité ou granularité**: Point d'observation et période.
-
-**Exemple** : Un agent surveille une forêt depuis un poste de guet.
-
-**Statut** : validé
-
-**Origine de la définition** : Dispositifs de prévention des incendies.
 
 **Ajouté par** : Mouad Arahal, 2026-11-17
