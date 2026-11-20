@@ -1,0 +1,11 @@
+meteo_foret:
+  type: csv_gz
+  urls:
+    - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2024.csv.gz
+    - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2025.csv.gz
+    - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2026.csv.gz
+
+communes_geo_api:
+  type: api_json
+  urls:
+    - https://geo.api.gouv.fr/departements/31/communes?fields=nom,code,centre,surface&format=json&geometry=centre

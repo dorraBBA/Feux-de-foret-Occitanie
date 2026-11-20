@@ -1,1 +1,4 @@
 bac-sable.md
+.env
+data/
+__pycache__/
