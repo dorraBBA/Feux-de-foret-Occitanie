@@ -16,6 +16,39 @@ carroyage_dfci:
   paths:
     - data/dfci/CARRO_DFCI_2x2_L93/CARRO_DFCI_2X2_L93.shp
 
+interventions_sdis:
+  type: csv_url
+  urls:
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20170509-105407/interventions2015.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20180112-143830/interventions2016.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20181221-100637/interventions2017.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20200407-114847/interventions2018.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20201021-115017/interventions2019.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20220110-100617/interventions2020.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20230309-084757/interventions2021.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20240403-145437/interventions2022.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20250804-085406/interventions2023.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20260702-094350/interventions2024.csv
+
+bdforet_v2:
+  type: wfs_foret
+  # un département à la fois (WFS IGN, découpé par commune avant chargement)
+  paths:
+    # - "31"
+    - "09"
+    - "11"
+    - "12"
+    - "30"
+    - "31"
+    - "32"
+    - "34"
+    - "46"
+    - "48"
+    - "65"
+    - "66"
+    - "81"
+    - "82"
+
 communes_geo_api:
   type: api_json
   urls:
