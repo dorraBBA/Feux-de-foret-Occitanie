@@ -1,13 +1,11 @@
 # Rendu cadrage technique · Groupe
 
-À rendre le vendredi 20 novembre 2026, en fin de journée. Une page suffit.
-
 | Rubrique | Votre réponse |
 |---|---|
 | Groupe (numéro, membres) | N° : . Membres : Ange-Samuel Brou, Dorra Boucharbia, Mouad Arahal |
-| Décideur et décision | |
+| Décideur et décision | Le décideur est le SIDS 31 , la décision porte sur : Où concentrer les moyens et à partir de quel niveau de la Météo des forêts faut-il déclencher le dispositif renforcé|
 | Lien GitHub | https://github.com/dorraBBA/Feux-de-foret-Occitanie |
-| Accès au dépôt | À confirmer avant l'envoi : public, ou enseignant ajouté en collaborateur |
+| Accès au dépôt | Notre dépôt est publique |
 
 ## Sources prévues
 
@@ -15,10 +13,10 @@
 |---|---|---|---|---|
 | BDIFF (Base de Données sur les Incendies de Forêts en France) | Ministère de l'Agriculture / DFCI | https://bdiff.agriculture.gouv.fr/incendies (export CSV) | Depuis 2006 (fin de période à confirmer à l'export) | Date d'alerte, département, commune, surface, nature |
 | Archives de la Météo des forêts | Météo-France | https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2024.csv.gz (idem `mdf_2025`, `mdf_2026`) | Depuis juin 2024 | `date`, `num_dep`, `nom_dep`, `niveau_j1`, `niveau_j2` |
-| Interventions des SDIS (statistiques annuelles) | Ministère de l'Intérieur (data.gouv.fr) | https://www.data.gouv.fr (jeu « interventions des SDIS ») | Annuelle, depuis 2008 | Département, année, `Feux de végétations` |
+| Interventions des SDIS (statistiques annuelles) | Ministère de l'Intérieur (data.gouv.fr) | https://www.data.gouv.fr/datasets/interventions-realisees-par-les-services-d-incendie-et-de-secours(jeu « interventions des SDIS ») | Annuelle, depuis 2008 | Département, année, `Feux de végétations` |
 | Admin Express (COG) | IGN | https://data.geopf.fr/wfs/ows (couche `ADMINEXPRESS-COG.LATEST:commune`) et https://geo.api.gouv.fr/communes | Version courante, mise à jour mensuelle | `code_insee`, `nom_officiel`, `code_insee_du_departement`, géométrie, centroïde |
-| BD Forêt® V2 | IGN | https://geoservices.ign.fr (téléchargement par département) | Version courante | Type de formation végétale, essence, géométrie |
-| Carroyage DFCI 2 km | DFCI / data.gouv.fr | https://static.data.gouv.fr/resources/carroyage-dfci-france-2-km/20160607-104129/CARRO_DFCI_2x2_L93.7z | Référentiel fixe (2016) | Identifiant de maille, géométrie (Lambert 93) |
+| BD Forêt® V2 | IGN | https://data.geopf.fr/wfs/ows (couche LANDCOVER.FORESTINVENTORY.V2:formation_vegetale) | Version courante | Type de formation végétale, essence, géométrie |
+| Carroyage DFCI 2 km | DFCI / data.gouv.fr | https://static.data.gouv.fr/resources/carroyage-dfci-france-2-km/20160607-104129/CARRO_DFCI_2x2_L93.7z  a été filtré sur l'occitanie à cause de la taille des données et de la limite de stockage de notre bdd supabase| Référentiel fixe (2016) | Identifiant de maille, géométrie (Lambert 93) |
 
 Sources écartées après évaluation : Statistiques nationales des SDIS (PDF sans clé commune), EFFIS, NASA FIRMS, Corine Land Cover.
 
