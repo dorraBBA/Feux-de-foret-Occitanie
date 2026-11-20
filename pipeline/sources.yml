@@ -1,0 +1,67 @@
+meteo_foret:
+  type: csv_gz
+  urls:
+    - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2024.csv.gz
+    - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2025.csv.gz
+    - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2026.csv.gz
+
+bdiff:
+  type: zip_csv
+  paths:
+    - data/incendies.zip
+    - data/incendies_2015_2024.zip
+
+carroyage_dfci:
+  type: shapefile
+  paths:
+    - data/dfci/CARRO_DFCI_2x2_L93/CARRO_DFCI_2X2_L93.shp
+
+interventions_sdis:
+  type: csv_url
+  urls:
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20170509-105407/interventions2015.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20180112-143830/interventions2016.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20181221-100637/interventions2017.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20200407-114847/interventions2018.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20201021-115017/interventions2019.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20220110-100617/interventions2020.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20230309-084757/interventions2021.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20240403-145437/interventions2022.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20250804-085406/interventions2023.csv
+    - https://static.data.gouv.fr/resources/interventions-realisees-par-les-services-d-incendie-et-de-secours/20260702-094350/interventions2024.csv
+
+bdforet_v2:
+  type: wfs_foret
+  # un département à la fois (WFS IGN, découpé par commune avant chargement)
+  paths:
+    # - "31"
+    - "09"
+    - "11"
+    - "12"
+    - "30"
+    - "31"
+    - "32"
+    - "34"
+    - "46"
+    - "48"
+    - "65"
+    - "66"
+    - "81"
+    - "82"
+
+communes_geo_api:
+  type: api_json
+  urls:
+    - https://geo.api.gouv.fr/departements/09/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/11/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/12/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/30/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/31/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/32/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/34/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/46/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/48/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/65/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/66/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/81/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/82/communes?fields=nom,code,centre,surface&format=json&geometry=centre
