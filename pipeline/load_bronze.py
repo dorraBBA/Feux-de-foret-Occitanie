@@ -76,11 +76,36 @@ def load_zip_csv(cur, source, path):
     print(f"{source}: {full.name} -> {len(rows)} lignes")
 
 
-LOADERS = {"csv_gz": load_csv_gz, "api_json": load_api_json, "zip_csv": load_zip_csv}
+def load_shapefile(cur, source, path):
+    import geopandas as gpd  # import local : dépendance lourde, utile pour cette source seulement
+
+    full = (HERE.parent / path).resolve()
+    region_file = HERE.parent / "data" / "occitanie.geojson"
+    if not region_file.exists():
+        url = ("https://data.geopf.fr/wfs/ows?SERVICE=WFS&VERSION=2.0.0&REQUEST=GetFeature"
+               "&TYPENAMES=ADMINEXPRESS-COG.LATEST:region&OUTPUTFORMAT=application/json"
+               "&SRSNAME=EPSG:2154&CQL_FILTER=code_insee='76'")
+        resp = requests.get(url, timeout=60)
+        resp.raise_for_status()
+        region_file.write_text(resp.text, encoding="utf-8")
+    region = gpd.read_file(region_file).to_crs(2154)
+    grid = gpd.read_file(full)
+    # On ne garde que les mailles qui touchent l'Occitanie (le fichier national dépasse la limite de la base)
+    grid = grid[grid.intersects(region.union_all())]
+    cur.execute("delete from bronze.raw_rows where source = %s and source_file = %s", (source, full.name))
+    cur.executemany(
+        "insert into bronze.raw_rows (source, source_file, row) values (%s, %s, %s)",
+        [(source, full.name, Jsonb({"nom": r.NOM, "wkt": r.geometry.wkt, "srid": 2154})) for r in grid.itertuples()],
+    )
+    print(f"{source}: {full.name} -> {len(grid)} mailles (Occitanie)")
+
+
+LOADERS = {"csv_gz": load_csv_gz, "api_json": load_api_json, "zip_csv": load_zip_csv, "shapefile": load_shapefile}
 REFRESH = {
     "meteo_foret": "silver.refresh_meteo_foret",
     "communes_geo_api": "silver.refresh_commune",
     "bdiff": "silver.refresh_incendie",
+    "carroyage_dfci": "silver.refresh_carroyage_dfci",
 }
 
 

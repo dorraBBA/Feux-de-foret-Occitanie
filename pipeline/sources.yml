@@ -10,6 +10,11 @@ bdiff:
   paths:
     - data/incendies.zip
 
+carroyage_dfci:
+  type: shapefile
+  paths:
+    - data/dfci/CARRO_DFCI_2x2_L93/CARRO_DFCI_2X2_L93.shp
+
 communes_geo_api:
   type: api_json
   urls:

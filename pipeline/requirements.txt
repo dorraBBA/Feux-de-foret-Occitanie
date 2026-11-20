@@ -1,4 +1,6 @@
 psycopg[binary]
+geopandas
+pyogrio
 requests
 PyYAML
 python-dotenv
