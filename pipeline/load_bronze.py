@@ -10,6 +10,7 @@ import io
 import json
 import os
 import sys
+import zipfile
 from pathlib import Path
 
 import psycopg
@@ -59,8 +60,28 @@ def load_api_json(cur, source, url):
     print(f"{source}: {url} -> HTTP {resp.status_code}")
 
 
-LOADERS = {"csv_gz": load_csv_gz, "api_json": load_api_json}
-REFRESH = {"meteo_foret": "silver.refresh_meteo_foret", "communes_geo_api": "silver.refresh_commune"}
+def load_zip_csv(cur, source, path):
+    full = (HERE.parent / path).resolve()
+    with zipfile.ZipFile(full) as z:
+        name = next(n for n in z.namelist() if n.lower().endswith(".csv"))
+        lines = z.read(name).decode("utf-8-sig").splitlines()
+    # L'export BDIFF a 2 lignes de critères avant la ligne d'en-têtes
+    header = next(i for i, l in enumerate(lines) if l.startswith("Année"))
+    rows = list(csv.DictReader(lines[header:], delimiter=";"))
+    cur.execute("delete from bronze.raw_rows where source = %s and source_file = %s", (source, full.name))
+    cur.executemany(
+        "insert into bronze.raw_rows (source, source_file, row) values (%s, %s, %s)",
+        [(source, full.name, Jsonb(r)) for r in rows],
+    )
+    print(f"{source}: {full.name} -> {len(rows)} lignes")
+
+
+LOADERS = {"csv_gz": load_csv_gz, "api_json": load_api_json, "zip_csv": load_zip_csv}
+REFRESH = {
+    "meteo_foret": "silver.refresh_meteo_foret",
+    "communes_geo_api": "silver.refresh_commune",
+    "bdiff": "silver.refresh_incendie",
+}
 
 
 def main(selected):
@@ -69,8 +90,8 @@ def main(selected):
         for name, cfg in sources.items():
             if selected and name not in selected:
                 continue
-            for url in cfg["urls"]:
-                LOADERS[cfg["type"]](cur, name, url)
+            for item in cfg.get("urls") or cfg["paths"]:
+                LOADERS[cfg["type"]](cur, name, item)
             cur.execute(f"select {REFRESH[name]}()")
             print(f"{name}: silver mis à jour ({cur.fetchone()[0]} lignes)")
         conn.commit()

@@ -5,6 +5,11 @@ meteo_foret:
     - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2025.csv.gz
     - https://meteofrance.s3.sbg.io.cloud.ovh.net/data/BULLETIN/MDF/mdf_2026.csv.gz
 
+bdiff:
+  type: zip_csv
+  paths:
+    - data/incendies.zip
+
 communes_geo_api:
   type: api_json
   urls:
