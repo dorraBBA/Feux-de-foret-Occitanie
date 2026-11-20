@@ -52,4 +52,16 @@ bdforet_v2:
 communes_geo_api:
   type: api_json
   urls:
+    - https://geo.api.gouv.fr/departements/09/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/11/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/12/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/30/communes?fields=nom,code,centre,surface&format=json&geometry=centre
     - https://geo.api.gouv.fr/departements/31/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/32/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/34/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/46/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/48/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/65/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/66/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/81/communes?fields=nom,code,centre,surface&format=json&geometry=centre
+    - https://geo.api.gouv.fr/departements/82/communes?fields=nom,code,centre,surface&format=json&geometry=centre
